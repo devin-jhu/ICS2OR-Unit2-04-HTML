@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="another web page">
+    <meta name="keywords" content="buttons">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>another web page </title>
+  </head>
+  <body>
+    Name: <input type="text" id="txtBox" value="put text here">
+    <p>type "whats up" in the text box</p>
+    <button onclick="textBox()">Try it</button><br>
+    <button onclick="background()">color change</button>
+    <script>
+      function textBox() {
+      document.getElementById("txtBox").value = "not much just chillin";
+      }
+       function background() {
+      document.getElementsByTagName("BODY")[0].style.backgroundColor = "lime";
+      }
+    </script>
+  </body>
+</html>
